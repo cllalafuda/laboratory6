@@ -19,9 +19,6 @@ def get_article(request, article_id):
 
 
 def create_post(request):
-    # Посколько механизм авторизации будет реализован только в 6
-    # лабораторной работе, пока выключим проверку
-
     if request.user.is_anonymous:
         raise Http404
 

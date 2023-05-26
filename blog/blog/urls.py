@@ -24,4 +24,5 @@ urlpatterns = [
     re_path(r"^article/(?P<article_id>\d+)$", views.get_article, name="get_article"),
     path("article/new/", views.create_post, name="create_post"),
     path("registrate", views.registrate_user, name="registrate_user"),
+    path("login", views.authorize_user, name="authorize_user")
 ]
